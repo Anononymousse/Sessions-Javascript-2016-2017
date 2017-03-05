@@ -51,15 +51,47 @@ function Jeu (){
       joueurs.push(j2)
       this.joueur [0].nom = 'Jackie';
       this.jouer [1].nom = 'Michel';
-      
+   
     }
+    this.ajouterJoueur = function (j){
+      this.joueur.push(j);
+    }
+    
+    this.afficherJoueurs = function (){
+      var indice = 0
+      var longueur = this.joueurs.length;
+      for (indice;indice<longueur;indice++){
+        this.joueurs[indice].afficher();
+      }
+   }
 }
+
+var jeu = new Jeu();
+
+console.log(jeu.afficherJoueurs());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* il y a deux moyens d'appeller la fonction ; 1) Mohammed.nom
                                                2) Mohammed['nom']*/
 
 
+    
     
 
 
