@@ -1,0 +1,66 @@
+var joueur = {
+  nom : "Herr Tychon",
+  expérience : 100,
+  //proffession : terroriste,
+  //couleur : moutarde,
+  //chanteur_favoris : maitre_gims,
+  //cheveux : roux,
+  
+};
+  
+console.log("Bonjour "+joueur.nom+", vous n'avez plus que "+joueur.exp+" gemmes. Vous êtes aussi nul que Wayan. Honteux, je n'ai jamais vu ça !");
+
+
+function player(){
+  this.nom= "Mohammed"
+  this.exp = 150;
+  this.afficher=function(){
+    var resultat = this.nom;
+    return resultat;
+  }
+  
+    this.getNom = function (){
+      return nom
+    }
+    
+    this.setNom = function(nouveau){
+      nom = nouveau;
+    }
+}
+
+var Mohammed = new player();
+
+Mohammed.exp=Mohammed.exp -15;
+
+
+var j = new player();
+console.log(j.afficher());
+
+
+
+j.setNom('Jackie');
+
+console.log(j.getNom());
+
+function Jeu (){
+      this.joueurs = [];
+    this.creerJoueur = function (){
+      var j1 = new joueur();
+      var j2 = new joueur();
+      joueurs.push(j1)
+      joueurs.push(j2)
+      this.joueur [0].nom = 'Jackie';
+      this.jouer [1].nom = 'Michel';
+      
+    }
+}
+
+
+/* il y a deux moyens d'appeller la fonction ; 1) Mohammed.nom
+                                               2) Mohammed['nom']*/
+
+
+    
+
+
+
